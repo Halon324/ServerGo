@@ -1,0 +1,26 @@
+GET http://localhost:8080/meeting-room
+
+{
+ "id": 1
+}
+###
+POST http://localhost:8080/meeting-room
+
+{
+  "number": "A1",
+  "name": "Тестовая комната",
+  "places": 6,
+  "device": 1,
+  "working_hours": 15
+}
+###
+DELETE http://localhost:8080/meeting-room
+
+{
+ "id": 1
+}
+###
+HEAD http://localhost:8080/meeting-room
+
+###
+PUT http://localhost:8080/meeting-room
